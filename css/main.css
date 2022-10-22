@@ -318,7 +318,7 @@ footer h3 {
     .boxes-part-1 {
         display: grid;
 
-        margin-left: 45%;
+        margin-left: 0;
     }
 
     .boxes-part-2 {
@@ -327,7 +327,7 @@ footer h3 {
 
     footer {
         
-        margin-left: 30%;
+        margin-left: -5%;
     
     }
 
@@ -355,7 +355,15 @@ footer h3 {
     }
 
     .hexText {
-        margin-left: 1%;
+        margin-left: -2%;
+    }
+
+    .boxes-part-1 {
+        margin-left: 30%;
+    }
+    
+    footer h3 {
+        margin-left: 28%;
     }
 
 
