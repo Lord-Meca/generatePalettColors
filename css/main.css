@@ -238,7 +238,7 @@ input {
     }
 
     .wrapper {
-        margin-top: -40%;
+        margin-top: -30%;
     }
 
     .hexButton {
@@ -255,7 +255,8 @@ input {
 @media (max-width: 450px){
 
     .content h2 {
-        font-size: 60px;
+        margin-top: 10%;
+        font-size: 65px;
         margin-left: 70px;
     }
 
@@ -264,12 +265,12 @@ input {
     }
 
     .wrapper {
-        margin-top: -5%;
+        margin-top: 10%;
     }
 
     .hexButton {
         width: 300px;
-        margin-left: 85px;
+        margin-left: 64px;
     }
 
 }
@@ -277,12 +278,12 @@ input {
 @media (max-width: 400px){
 
     .content h2 {
-        font-size: 50px;
+        font-size: 55px;
         margin-left: 95px;
     }
 
     .wrapper {
-        margin-top: -10%;
+        margin-top: 10%;
     }
 
 
