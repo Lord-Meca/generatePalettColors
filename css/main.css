@@ -233,6 +233,13 @@ input {
     
 }
 
+footer h3 {
+    color: white;
+    
+    text-align: center;
+    justify-content: center;
+}
+
 
 
 @media (max-width: 1206px){
@@ -262,6 +269,12 @@ input {
     .boxesColors .original {
         height: 75px;
         width: 75px;
+    }
+
+
+    footer {
+        position: relative;
+        
     }
 
 
@@ -298,13 +311,18 @@ input {
     .boxes-part-1 {
         display: grid;
 
-        margin-left: 20%;
+        margin-left: 50%;
     }
 
     .boxes-part-2 {
         display: grid;
     }
 
+    footer {
+        
+        margin-left: 30%;
+    
+    }
 
 
 
