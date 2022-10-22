@@ -238,6 +238,8 @@ footer h3 {
     
     text-align: center;
     justify-content: center;
+
+    margin-top: 10%;
 }
 
 
@@ -305,13 +307,13 @@ footer h3 {
 
     .hexButton {
         width: 300px;
-        margin-left: 40px;
+        margin-left: 10px;
     }
 
     .boxes-part-1 {
         display: grid;
 
-        margin-left: 50%;
+        margin-left: -3%;
     }
 
     .boxes-part-2 {
@@ -320,7 +322,7 @@ footer h3 {
 
     footer {
         
-        margin-left: 30%;
+        margin-left: -10%;
     
     }
 
