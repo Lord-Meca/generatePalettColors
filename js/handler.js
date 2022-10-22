@@ -18,6 +18,22 @@ function hexToRgbA(hex){
     throw new Error('Bad Hex');
 }
 
+function RgbaToHex(orig) {
+    var a, isPercent,
+    rgb = orig.replace(/\s/g, '').match(/^rgba?\((\d+),(\d+),(\d+),?([^,\s)]+)?/i),
+    alpha = (rgb && rgb[4] || "").trim(),
+    hex = rgb ?
+    (rgb[1] | 1 << 8).toString(16).slice(1) +
+    (rgb[2] | 1 << 8).toString(16).slice(1) +
+    (rgb[3] | 1 << 8).toString(16).slice(1) : orig;
+  
+    if (alpha !== "") { a = alpha; }
+    else { a = 01; }
+    hex = hex + a;
+  
+    return hex;
+}
+
 function validHex() {
 
     var reg=/^#([0-9a-f]{3}){1,2}$/i;
@@ -45,9 +61,28 @@ function validHex() {
 
 function generate(){
 
-    document.querySelector(".first").style.background = validHex();
+    var firstHex = validHex();
+    var firstHexContent = "ㅤㅤ#" + RgbaToHex(firstHex);
+
+    document.querySelector(".first").style.background = firstHex;
+    document.querySelector(".first-hexa").textContent = firstHexContent.replace("1", "");
+
+    var secondHex = validHex();
+    var secondHexContent = "ㅤㅤ#" + RgbaToHex(secondHex);
+
     document.querySelector(".second").style.background = validHex();
+    document.querySelector(".second-hexa").textContent = secondHexContent.replace("1", "");
+
+    var thirdHex = validHex();
+    var thirdHexContent = "ㅤㅤ#" + RgbaToHex(thirdHex);
+
     document.querySelector(".third").style.background = validHex();
+    document.querySelector(".third-hexa").textContent = thirdHexContent.replace("1", "");
+
+
+    var input = document.getElementById("hexInput").value;
+
+    document.querySelector(".original").style.backgroundColor = input;
 
     showBoxesColors();
 }
