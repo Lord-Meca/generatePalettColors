@@ -255,18 +255,21 @@ input {
 @media (max-width: 450px){
 
     .content h2 {
-        font-size: 1.7rem;
+        font-size: 60px;
         margin-left: 70px;
     }
 
-      .boxesColors {
+    .boxesColors {
         margin-left: 240px;
     }
 
+    .wrapper {
+        margin-top: -5%;
+    }
 
     .hexButton {
         width: 300px;
-        margin-left: 70px;
+        margin-left: 85px;
     }
 
 }
